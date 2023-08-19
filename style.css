@@ -154,7 +154,7 @@ main {
 }
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #333;
+    background-color: #000000;
     color: #eb0a0a;
     
 }
