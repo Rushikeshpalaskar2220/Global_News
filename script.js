@@ -43,10 +43,17 @@ function fillDataInCard(cardClone, article) {
 const modeToggle = document.getElementById("mode-toggle");
 const body = document.body;
 const mainNav = document.getElementById("main-nav");
+const backgroundContainer = document.querySelector(".background-container"); // Add this line
 
 modeToggle.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
     body.classList.toggle("light-mode");
     mainNav.classList.toggle("dark-mode-nav");
+    
+    if (body.classList.contains("dark-mode")) {
+        backgroundContainer.style.backgroundImage = "url('/assets/Blue\ Modern\ Pitch\ Deck\ Presentation\ .png')";
+    } else {
+        backgroundContainer.style.backgroundImage = "url('/assets/Blue\ Modern\ Pitch\ Deck\ Presentation\ .png')";
+    }
 });
 
