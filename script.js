@@ -33,8 +33,7 @@ function fillDataInCard(cardClone, article) {
     newsTitle.innerHTML = article.title;
     newsDesc.innerHTML = article.description;
 
-    newsSource.innerHTML = `${article.source} · ${article.publishedAt}`;
-
+    newsSource.innerHTML = `${article.source.name} · ${article.publishedAt}`;
     cardClone.firstElementChild.addEventListener("click", () => {
         window.open(article.url, "_blank");
     });

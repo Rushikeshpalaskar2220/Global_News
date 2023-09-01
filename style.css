@@ -163,6 +163,7 @@ body.dark-mode {
 
 /* Dark Mode Navigation Bar Styles */
 .dark-mode-nav {
+    transition: all 1s;
     background-color: #000000; /* Change this color to your desired background color */
 }
 
